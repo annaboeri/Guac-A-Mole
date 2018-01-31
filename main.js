@@ -36,7 +36,7 @@ function createTimer(){
     if (seconds === 0){
         stopTimer();
         if (currentScore > 9){
-            gameOver.innerText = "Good work! You smashed enough avocados to make guacamole!";
+            gameOver.innerText = "Great job! You smashed enough avocados to make guacamole! Mmmm delicious.";
             container.innerHTML = guacamoleImage;
         }
         else {
