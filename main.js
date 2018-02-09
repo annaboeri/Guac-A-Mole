@@ -51,7 +51,6 @@ function createTimer(){
          }
 
 
-
 var timeCountTimer = setInterval(createTimer,1000);
 
 function moleClicked(){
@@ -89,7 +88,21 @@ function moleMove(){
 var moleTimer = setInterval(moleMove, 775);
 
 
-//new game
-if (seconds === 0){
-
+//new game 
+function resetGame(){
+    currentScore = 0;
+    seconds = 21;
+    scoreCount.innerText = 0;
+    generateMole();
+    createTimer();
+    
 }
+
+newGameBtn.addEventListener('click', resetGame);
+
+
+// function
+// if (seconds === 0){
+    
+
+// }
